@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="index.js"></script>
     <header >
         <!-- Logo -->
         <img src="./assets/logo.svg" alt="Logo" class="logo">
@@ -88,9 +89,9 @@
              -->
             <div>
                 <div>
-                    <button type="button" onclick="" onkeydown="">+</button>
-                    <p aria-label="0">0</p>
-                    <button type="button" onclick="" onkeydown="">-</button>
+                    <button type="button"  id ="plus" onclick=" addToCart()" onkeydown="">+</button>
+                    <p aria-label="0" id="text"> 0 </p>
+                    <button type="button"  id ="minus" onclick="removeFromCart()" onkeydown="">-</button>
                 </div>
                 <button type="button" onclick="" onkeydown="">Add to cart</button>
             </div>
