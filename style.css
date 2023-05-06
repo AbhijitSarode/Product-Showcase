@@ -60,3 +60,21 @@
   text-decoration: none;
   cursor: pointer;
 }
+
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+  
+ 

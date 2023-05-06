@@ -60,7 +60,7 @@
                  -->
 
                  <!-- Added a onclick event to the images here  -->
-                 <div class="" role="tablist" aria-label="All images of the product">
+                 <div class="imgClass" role="tablist" aria-label="All images of the product">
                     <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" onclick="openModal(this)">
                     <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
                     <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
@@ -71,6 +71,13 @@
                 <div id="myModal" class="modal">
                     <div class="modal-content">
                         <span class="close" id="myBtn">&times;</span>
+                        <div class="carousel">
+                            <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab">
+                            <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" >
+                            <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" >
+                            <img src="./assets/image-product-4-thumbnail.jpg" alt="thumbnail4" tabindex="-1" aria-selected="false" role="tab" >
+                        </div>
+                       
                         <img id="modalImg" src="" alt="Modal Image">
                     </div>
                 </div>
