@@ -13,42 +13,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="index.js"></script>
+    <div class="main-container">
     <header >
         <!-- Logo -->
-        <img src="./assets/logo.svg" alt="Logo" class="logo">
+    
+        <div class="logo">
+            <img src="./assets/logo.svg" alt="Logo">
+            <div role="navigation" class="navbar-div">
+                     <ul>
+                
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav> </div>
+    
+    
         
-        <!-- Navigation -->
-        <nav role="navigation">
-            <ul>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
+        
+         
         <!-- Account + Cart -->
         <div role="Account">
-            <button aria-label="My Cart" class="cart">Cart</button>
+            <button aria-label="My Cart">Cart</button>
             <img src="./assets/image-avatar.png" alt="Avatar">
-            
         </div>
-    </header>
 
+    </header>
+    
     <main>
 
-        <!-- Left: Images panel  (Carousel) -->
-        
+        <!-- Left: Images panel (Carousel) -->
         <div class="">
 
             <!-- Main image -->
-                <picture>
-                    <img src="./assets/image-product-1.jpg" alt="Main image">
+                  <picture>
+                    <img src="./assets/image-product-1.jpg" alt="Main image" id="picture-1">
                 </picture>
-
-                <!-- Image thumbnails -->
+                <div class="show-case" role="tablist" aria-label="All images of the product">
+                    <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" id="product-1" > 
+                    <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" id="product-2" >
                 
                 <!-- 
                     ******  TO APOORVA  ******
@@ -58,39 +63,33 @@
                     - Add 'hidden' attribute to the thumbnails that are not selected (aria-selected="false")
                     - The thumbnails are keyboard accessible as well therefore add onClick & onKeyDown event listeners to the thumbnails
                  -->
-
-                 <!-- Added a onclick event to the images here  -->
-                 <div class="" role="tablist" aria-label="All images of the product">
-                    <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" onclick="openModal(this)">
-                    <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
-                    <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
-                    <img src="./assets/image-product-4-thumbnail.jpg" alt="thumbnail4" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
-                  </div>
-                  
-                    <!-- Modal  Created -->
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" id="myBtn">&times;</span>
-                        <img id="modalImg" src="" alt="Modal Image">
-                    </div>
+                <div class="" role="tablist" aria-label="All images of the product">
+                    <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" > 
+                    <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" >
+                    <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" >
+                    <img src="./assets/image-product-4-thumbnail.jpg" alt="thumbnail4" tabindex="-1" aria-selected="false" role="tab" >
                 </div>
-  
-        
+        </div>
 
         <!-- Right: Product details -->
-        <div class="">
-
+        
+            <div class="left-portion">
             <!-- Product details -->
-            <div class="">
-                <p>SNEAKER COMPANY</p>
-                <h1>Fall Limited Edition Sneakers</h1>
-                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+            <div class="product-details">
+                <p id="sneaker-company">SNEAKER COMPANY</p>
+                <h1 id="limited">Fall Limited Edition Sneakers</h1>
+                 <p id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll
+                    withstand everything the weather can offer.
+                 </p>
+                
+                
             </div>
             
             <!-- Product price -->
-            <div>
-                <p>$125.00 <span>50%</span></p>
-                <p>$250.00</p>
+            <div class="product-price">
+                <p id="main-price">$125.00 <span id="discount">50%</span></p>
+                <p id="discount-price">$250.00</p>
+                  
             </div>
 
             <!-- Product shopping options -->
@@ -99,17 +98,20 @@
                 ***** TO VIBHOR *****
                 - The paragraph tag is accessible
                 - Update the 'aria-label' attribute of the paragraph when you change it using JS tag to keep its accessibility
-
              -->
             <div>
                 <div>
-                    <button type="button"  id ="plus" onclick= "addSelection()" onkeydown="addSelection()">+</button>
-                    <p aria-label="0" id="text"> 0 </p>
-                    <button type="button"  id ="minus" onclick="removeSelection()" onkeydown="removeSelection()">-</button>
+                    <button type="button" onclick="" onkeydown="">+</button>
+                    <p aria-label="0">0</p>
+                    <button type="button" onclick="" onkeydown="">-</button>
                 </div>
-                <button type="button" onclick="" onkeydown="">Add to cart</button>
+                <button type="button" onclick="" onkeydown="" id="add-to-cart">Add to cart</button>
+            </div>
             </div>
         </div>
+</div>
+</div>
+
     </main>
 </body>
 </html>
