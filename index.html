@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <script src="index.js"></script>
     <header >
         <!-- Logo -->
         <img src="./assets/logo.svg" alt="Logo" class="logo">
@@ -30,14 +31,16 @@
 
         <!-- Account + Cart -->
         <div role="Account">
-            <button aria-label="My Cart">Cart</button>
+            <button aria-label="My Cart" class="cart">Cart</button>
             <img src="./assets/image-avatar.png" alt="Avatar">
+            
         </div>
     </header>
 
     <main>
 
-        <!-- Left: Images panel (Carousel) -->
+        <!-- Left: Images panel  (Carousel) -->
+        
         <div class="">
 
             <!-- Main image -->
@@ -55,13 +58,24 @@
                     - Add 'hidden' attribute to the thumbnails that are not selected (aria-selected="false")
                     - The thumbnails are keyboard accessible as well therefore add onClick & onKeyDown event listeners to the thumbnails
                  -->
-                <div class="" role="tablist" aria-label="All images of the product">
-                    <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" > 
-                    <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" >
-                    <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" >
-                    <img src="./assets/image-product-4-thumbnail.jpg" alt="thumbnail4" tabindex="-1" aria-selected="false" role="tab" >
+
+                 <!-- Added a onclick event to the images here  -->
+                 <div class="" role="tablist" aria-label="All images of the product">
+                    <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" onclick="openModal(this)">
+                    <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
+                    <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
+                    <img src="./assets/image-product-4-thumbnail.jpg" alt="thumbnail4" tabindex="-1" aria-selected="false" role="tab" onclick="openModal(this)">
+                  </div>
+                  
+                    <!-- Modal  Created -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close" id="myBtn">&times;</span>
+                        <img id="modalImg" src="" alt="Modal Image">
+                    </div>
                 </div>
-        </div>
+  
+        
 
         <!-- Right: Product details -->
         <div class="">
@@ -85,12 +99,13 @@
                 ***** TO VIBHOR *****
                 - The paragraph tag is accessible
                 - Update the 'aria-label' attribute of the paragraph when you change it using JS tag to keep its accessibility
+
              -->
             <div>
                 <div>
-                    <button type="button" onclick="" onkeydown="">+</button>
-                    <p aria-label="0">0</p>
-                    <button type="button" onclick="" onkeydown="">-</button>
+                    <button type="button"  id ="plus" onclick= "addSelection()" onkeydown="addSelection()">+</button>
+                    <p aria-label="0" id="text"> 0 </p>
+                    <button type="button"  id ="minus" onclick="removeSelection()" onkeydown="removeSelection()">-</button>
                 </div>
                 <button type="button" onclick="" onkeydown="">Add to cart</button>
             </div>
