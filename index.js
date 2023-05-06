@@ -37,3 +37,42 @@ function openModal(image) {
     }
   }
 }
+
+var currentIndex = 0 
+
+var carouselImages = document.querySelectorAll('.carousel img');
+
+var prevButton = document.querySelector('.prev');
+var nextButton = document.querySelector('.next');
+ 
+function showImage(index) {
+    // Hide all images
+    carouselImages.forEach(function(img) {
+      img.style.display = 'none';
+    });
+  
+    // Show the image at the specified index
+    carouselImages[index].style.display = 'block';
+  }
+  
+  function changeImage(direction) {
+    currentIndex += direction;
+    
+    // Wrap around to the first image if at the end
+    if (currentIndex < 0) {
+      currentIndex = carouselImages.length - 1;
+    } else if (currentIndex >= carouselImages.length) {
+      currentIndex = 0;
+    }
+  
+    showImage(currentIndex);
+  }
+  
+  // Event listeners for previous and next buttons
+  prevButton.addEventListener('click', function() {
+    changeImage(-1);
+  });
+  
+  nextButton.addEventListener('click', function() {
+    changeImage(1);
+  });

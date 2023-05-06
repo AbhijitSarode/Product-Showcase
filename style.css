@@ -63,18 +63,30 @@
 
 
 .carousel {
-    display: flex;
-    overflow: hidden;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .carousel img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  
-  
-  
- 
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel img {
+  display: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel img:first-child {
+  display: block;
+}
+
+.carousel-buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.carousel-buttons button {
+  border: none;
+  background-color: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
