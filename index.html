@@ -41,14 +41,14 @@
         <div class="">
 
             <!-- Main image -->
-                <picture>
-                    <img src="./assets/image-product-1.jpg" alt="Main image">
-                </picture>
 
                 <!-- Image thumbnails -->
                 
 
-                <div class="" role="tablist" aria-label="All images of the product">
+                <div class="carousel-container" role="tablist" aria-label="All images of the product">
+                    <button class="left-btn" onclick="moveLeft()">Left</button>
+                    <img id="carousel" src="" alt="">
+                    <button class="right-btn" onclick="moveRight()">Right</button>
                     <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" > 
                     <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" >
                     <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" >
@@ -89,5 +89,6 @@
             </div>
         </div>
     </main>
+    <script src="./index.js"></script>
 </body>
 </html>
