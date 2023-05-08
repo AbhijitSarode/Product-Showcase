@@ -7,73 +7,88 @@
     font-family: 'Kumbh Sans', sans-serif; /*Putting fonts here temporarily*/
 }
 
-:root {
-    /* Colors */
-    --primary-orange: 26 100% 55%;
-    --primary-pale-orange: 25 100% 94%;
-    --primary-white: 0, 0%, 100%;
-    --primary-black: 0, 0%, 0%;
-    --secondary-very-dark-blue: 220 13% 13%;
-    --secondary-dar-grayish-blue: 219 9% 45%;
-    --secondary-grayish-blue: 220 14% 75%;
-    --secondary-light-grayish-blue: 223 64% 98%;
-}
 .logo{
     padding:40px;
-
 }
-.navbar-div{
-    display:inline-block;
+nav{
+     display:inline-block;
  text-align: left;
 }
-.navbar-div ul{
+nav ul{
     display: inline-block;
     list-style: none;
- 
 }
-.navbar-div li{
+nav li{
     display:inline-block;
     padding:0 20px;
 }
-#cart{
- position: absolute;
- left:900px;
- top:40px;
-    }
-
-
-    #picture-1  {
-        position:absolute;
-        width:500px;
-        height:450px;
-        border-radius: 9px;
-        left:75px;
-        top:120px;
-        
-    }
-    #avatar{
-        position: absolute;
-        width:30px;
-        height:30px;
-        left:950px;
-        top:35px;
+     .account-cart{
+        position: fixed;
+        display:inline-block;
+        left:1000px;
+        top:40px;
      }
      .show-case{
+        position: fixed;
+            display: flex;
+            padding: 10px;
+            width:167px;
+            height:167px;
+            top:550px;
+            left:300px;
+        }
+       .show-case img{
+           padding: 20px;
+           padding-left: 0px;
+           border-radius: 23px;
+       }
+        .main-container{
+            position: absolute;
+            width:80%;
+            left:220px;
+             }
+             
+          #picture-1 {
+            position: fixed;
+            width:500px;
+            height:430px;
+             border-radius: 9px;
+             left:300px;
+             top:130px;
+                      } 
+            .button{
+            display: flex;
+            justify-content:start;
+            align-items:center;
+            padding-left: 700px;
+             padding-top: 380px;
+                        }
+         .btn {
+            width: 40px;
+            height:42px;
+            border-radius: 9px;
+            margin: 5px;
+            border:1px solid #FFFFFFFF;
+            color: hsl(26, 100%, 55%);
+                     }
+             #add-to-cart{
+             position: absolute;
+             height: 43px;
+            width: 260px;
+             left: 820px;
+              top: 490px;
+            border-radius: 5px;
+             background: hsl(26, 100%, 55%);
+             border: 1px solid #FFFFFF;
+             color:#FFFFFF; 
+                 }
+      /* labels*/   #sneaker-company{
         position: absolute;
-        left:75px;
-        top:530px;
-        
-     }
-     #sneaker-company{
-        position:absolute;
         left:700px;
         top:200px;
         font-size: 14px;
        color: hsl(26, 100%, 55%);
-      
-    
-    
-       font-weight: 600;
+      font-weight: 600;
     }
     #limited{
         position: absolute;
@@ -84,134 +99,35 @@
         initial-letter: 0.2em;
         width:420px
     }
-    
     #description{
         position: absolute;
         left:700px;
         top:340px;
         letter-spacing: 0.05;
         width:420px;
-        
-    }
+        }
     #main-price{
-        position:absolute;
+         position: absolute;
         left:700px;
         top:430px;
         font-weight: 700;
         font-size:19px;
     }
     #discount{
-        position:absolute;
         height: 25px;
         width: 40px;
         left: 80px;
-        top: 0px;
-        border-radius:0%;
         border: 1px solid #FFFFFF;
         color:hsl(26,100%,55%);
         border-radius: 9px;
         background-color:hsl(25,100%,94%);
-        text-align: center;
+        
         }
        #discount-price{
-        position:absolute;
+        position: absolute;
         left:700px;
         top:460px;
         font-weight: 300;
         font-size:16px;
        }
         
-       #Increment1{
-        position: absolute;
-        height: 44px;
-        width: 40px;
-        left: 765px;
-        top: 490px;
-        border-radius:0%;
-        border: 1px solid #FFFFFF;
-        color:hsl(26,100%,55%);
-        border-radius: 9px;
-         }
-          
-        #count{
-            position: absolute;
-            height: 21px;
-        width: 12px;
-        left: 745px;
-        top: 500px;
-        border-radius:0%;
-        
-        font-family:monospace;
-        font-size: 25px;
-        font-weight: 400;
-        line-height: 26px;
-        letter-spacing: 0.01em;
-        text-align: left;
-        color: black;
-        }
-        #Decrement1{
-            position: absolute;
-            height: 44px;
-            width: 40px;
-            left: 700px;
-            top: 490px;
-            border-radius:0%;
-            border:1px solid #FFFFFFFF;
-            color: hsl(26, 100%, 55%);
-            border-radius:9px;
-            } 
-            #add-to-cart{
-                position: absolute;
-                position: absolute;
-                 height: 43px;
-                width: 260px;
-                left: 815px;
-                 top: 490px;
-               border-radius: 5px;
-               background: hsl(26, 100%, 55%);
-               border: 1px solid #FFFFFF;
-              color:#FFFFFF; 
-
-            }
-
-            .show-case{
-              height:0px;
-            }
-            #product-1{
-                position: absolute;
-                width:100px;
-                height:100px;
-                display: inline-block;
-                top:50px;
-                border-radius: 9px;
-            }
-            #product-2{
-                position:absolute;
-                width:100px;
-                height:100px;
-                left:133px;
-                top:50px;
-                border-radius: 9px;
-            }
-            #product-3{
-                position: absolute;
-                width:100px;
-                height:100px;
-                left:263px;
-                top:50px;
-                border-radius: 9px; 
-            }
-            #product-4{
-                position: absolute;
-                width:100px;
-                height:100px;
-                left:393px;
-                top:50px;
-                border-radius: 9px;
-            }
-            .main-container{
-                position: absolute;
-                width:80%;
-                left:230px;
-                
-            }
