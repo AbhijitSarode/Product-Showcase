@@ -5,15 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kumbh Sans', sans-serif; /*Putting fonts here temporarily*/
-}:root {
---primary-orange: 26 100% 55%;
-    --primary-pale-orange: 25 100% 94%;
-    --primary-white: 0, 0%, 100%;
-    --primary-black: 0, 0%, 0%;
-    --secondary-very-dark-blue: 220 13% 13%;
-    --secondary-dar-grayish-blue: 219 9% 45%;
-    --secondary-grayish-blue: 220 14% 75%;
-    --secondary-light-grayish-blue: 223 64% 98%;
 }
 .logo{
     padding:40px;
@@ -58,7 +49,7 @@ nav li{
      display:flex;
             width:500px;
             height:450px;
-            
+
             border-radius: 9px;
                       } 
                       .produtcs-labels{
