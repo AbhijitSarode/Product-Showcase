@@ -10,13 +10,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="main-container">
     <header >
+        <divs class="main-container">
         <!-- Logo -->
-    
         <div class="logo">
             <img src="./assets/logo.svg" alt="Logo" >
             <nav role="navigation">
@@ -35,68 +34,54 @@
             <img src="./assets/image-avatar.png"alt="Avatar" style="width: 30px;height:30px">
         </div>
 
-    </header>
-    
     <main>
-<div class="lower-portion">
-        
-        
+
+        <!-- Left: Images panel (Carousel) -->
+        <div class="image-panel">
 
             <!-- Main image -->
-            <picture>
-    
-            <img src="./assets/image-product-1.jpg" alt="Main image" id="picture-1">
-            </picture>
+                <picture>
+                    <img src="./assets/image-product-1.jpg" alt="Main image"id="picture1">
+                </picture>
 
-                <div class="product-1">
-                    
+        
                 <div class="show-case" role="tablist" aria-label="All images of the product">
                     <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" > 
-                    <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab">
-                
+                    <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" >
                     <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" >
-                    <img src="./assets/image-product-4-thumbnail.jpg" alt="thumbnail4" tabindex="-1" aria-selected="false" role="tab">
-            
-                </div>  
-            </div>  
-</div>
+                    <img src="./assets/image-product-4-thumbnail.jpg" alt="thumbnail4" tabindex="-1" aria-selected="false" role="tab" >
+                </div>
+        </div>
+
         <!-- Right: Product details -->
-        
-            <div class="left-portion">
+        <div class="produtcs-labels">
+
             <!-- Product details -->
             <div class="product-details">
-                <p id="sneaker-company">SNEAKER COMPANY</p>
-                <h1 id="limited">Fall Limited Edition Sneakers</h1>
-                 <p id="description">These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll
-                    withstand everything the weather can offer.
-                 </p>
-                
-                
+                <p class="product-details">SNEAKER COMPANY</p>
+                <h1>Fall Limited Edition Sneakers</h1>
+                <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
             </div>
             
             <!-- Product price -->
             <div class="product-price">
-                <p id="main-price">$125.00 <span id="discount">50%</span></p>
-                <p id="discount-price">$250.00</p>
-                  
+                <p1 class="product-price">$125.00 <span class="product-price">50%</span></p1>
+                <p>$250.00</p>
             </div>
+
+            <!-- Product shopping options -->
 
             
-
-          
             <div>
                 <div class="button">
-                    <button type="button" onclick="" onkeydown="" class="btn" >+</button>
-                    <p aria-label="0" class="zero" >0</p>
-                    <button type="button" onclick="" onkeydown="" class="btn" >-</button>
+                    <button type="button" onclick="" onkeydown="" class="btn">-</button>
+                    <p aria-label="0"class="btn">0</p>
+                    <button type="button" onclick="" onkeydown="" class="btn">+</button>
                 </div>
-                <button type="button" onclick="" onkeydown="" id="add-to-cart">Add to cart</button>
-            </div>
+                <button type="button" onclick="" onkeydown=""class="add-to-cart">Add to cart</button>
             </div>
         </div>
-</div>
-</div>
-
+        </div>
     </main>
 </body>
 </html>
