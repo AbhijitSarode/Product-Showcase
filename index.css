@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif; /*Putting fonts here temporarily*/
+}
+.logo{
+    padding:40px;
+}
+nav{
+     display:inline-block;
+ text-align: left;
+}
+nav ul{
+    display: inline-block;
+    list-style: none;
+}
+nav li{
+    display:inline-block;
+    padding:0 20px;
+}
+     .account-cart{
+        position: fixed;
+        display:inline-block;
+        left:1000px;
+        top:40px;
+     }
+     .show-case{
+             display: flex;
+            padding: 10px;
+            width:167px;
+            height:167px;
+            top:550px;
+          }
+       .show-case img{
+           padding: 20px;
+           padding-left: 0px;
+           border-radius: 23px;
+       }
+        .main-container{
+            position: absolute;
+            width:80%;
+            left:220px;
+             }
+             
+          #picture1{
+     display:flex;
+            width:500px;
+            height:450px;
+
+            border-radius: 9px;
+                      } 
+                      .produtcs-labels{
+                position: absolute;
+                left:650px;
+                width:430px;
+                top:200px;
+            }
+            p.product-details{
+               color:hsl(26, 100%, 55%);
+            }
+            .product-price{
+                top:300px;
+            }
+     p1.product-price{
+        font-weight: 700;
+        font-size:19px;
+ }
+ span.product-price{
+    height: 25px;
+    width: 40px;
+    border: 1px solid #FFFFFF;
+    color:hsl(26,100%,55%);
+    background-color:hsl(25,100%,94%);
+    
+ }
+          .btn {
+                display: inline;
+               width: 40px;
+               height:42px;
+               border-radius: 9px;
+               margin: 5px; border:1px solid #FFFFFFFF;
+               color: hsl(26, 100%, 55%);
+                        }
+    .add-to-cart{
+        position: absolute;
+        height: 43px;
+        width: 260px;
+         left: 140px;
+          top: 205px;
+        border-radius: 5px;
+         background: hsl(26, 100%, 55%);
+         border: 1px solid #FFFFFF;
+         color:#FFFFFF; 
+    }
+             

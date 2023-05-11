@@ -10,45 +10,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header >
+        <divs class="main-container">
         <!-- Logo -->
-        <img src="./assets/logo.svg" alt="Logo" class="logo">
-        
-        <!-- Navigation -->
-        <nav role="navigation">
-            <ul>
-                <li><a href="#">Collections</a></li>
-                <li><a href="#">Men</a></li>
-                <li><a href="#">Women</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Account + Cart -->
-        <div role="Account">
-            <button aria-label="My Cart">Cart</button>
-            <img src="./assets/image-avatar.png" alt="Avatar">
+        <div class="logo">
+            <img src="./assets/logo.svg" alt="Logo" >
+            <nav role="navigation">
+                     <ul>
+                
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav> </div>
+    <!-- Account + Cart -->
+        <div role="Account" class="account-cart">
+            <svg width="22" height="20"  xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="#69707D" fill-rule="nonzero"/></svg>
+            <img src="./assets/image-avatar.png"alt="Avatar" style="width: 30px;height:30px">
         </div>
-    </header>
 
     <main>
 
         <!-- Left: Images panel (Carousel) -->
-        <div class="">
+        <div class="image-panel">
 
             <!-- Main image -->
+                <picture>
+                    <img src="./assets/image-product-1.jpg" alt="Main image"id="picture1">
+                </picture>
 
-                <!-- Image thumbnails -->
-                
-
-                <div class="carousel-container" role="tablist" aria-label="All images of the product">
-                    <button class="left-btn" onclick="moveLeft()">Left</button>
-                    <img id="carousel" src="" alt="">
-                    <button class="right-btn" onclick="moveRight()">Right</button>
+        
+                <div class="show-case" role="tablist" aria-label="All images of the product">
                     <img src="./assets/image-product-1-thumbnail.jpg" alt="thumbnail1" tabindex="0" aria-selected="true" role="tab" > 
                     <img src="./assets/image-product-2-thumbnail.jpg" alt="thumbnail2" tabindex="-1" aria-selected="false" role="tab" >
                     <img src="./assets/image-product-3-thumbnail.jpg" alt="thumbnail3" tabindex="-1" aria-selected="false" role="tab" >
@@ -57,36 +54,33 @@
         </div>
 
         <!-- Right: Product details -->
-        <div class="">
+        <div class="produtcs-labels">
 
             <!-- Product details -->
-            <div class="">
-                <p>SNEAKER COMPANY</p>
+            <div class="product-details">
+                <p class="product-details">SNEAKER COMPANY</p>
                 <h1>Fall Limited Edition Sneakers</h1>
                 <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
             </div>
             
             <!-- Product price -->
-            <div>
-                <p>$125.00 <span>50%</span></p>
+            <div class="product-price">
+                <p1 class="product-price">$125.00 <span class="product-price">50%</span></p1>
                 <p>$250.00</p>
             </div>
 
             <!-- Product shopping options -->
 
-            <!-- 
-                ***** TO VIBHOR *****
-                - The paragraph tag is accessible
-                - Update the 'aria-label' attribute of the paragraph when you change it using JS tag to keep its accessibility
-             -->
+            
             <div>
-                <div>
-                    <button type="button" onclick="" onkeydown="">+</button>
-                    <p aria-label="0">0</p>
-                    <button type="button" onclick="" onkeydown="">-</button>
+                <div class="button">
+                    <button type="button" onclick="" onkeydown="" class="btn">-</button>
+                    <p aria-label="0"class="btn">0</p>
+                    <button type="button" onclick="" onkeydown="" class="btn">+</button>
                 </div>
-                <button type="button" onclick="" onkeydown="">Add to cart</button>
+                <button type="button" onclick="" onkeydown=""class="add-to-cart">Add to cart</button>
             </div>
+        </div>
         </div>
     </main>
     <script src="./index.js"></script>
